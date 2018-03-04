@@ -54,6 +54,7 @@ function d($value = null, $die = 1)
         while($row = mysql_fetch_assoc($rs)){
             $smartyRs[] = $row;
         }
+
         return $smartyRs;
     }
 

@@ -8,7 +8,7 @@
                 FROM categories
                 WHERE
                 parent_id = {$catID}";
-        d($sql);
+
         $rs = mysql_query($sql);
 
         return createSmartyRsArray($rs);

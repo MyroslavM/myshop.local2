@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2012-03-20 20:24:08
+<?php /* Smarty version Smarty-3.1.6, created on 2018-03-06 21:10:06
          compiled from "../views/default\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:95724f68d95829a6e4-54800566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9797888b337e03f99b06385b60a372bbb52d5e02' => 
     array (
       0 => '../views/default\\header.tpl',
-      1 => 1332271312,
+      1 => 1520359233,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_4f68d95849501',
   'variables' => 
   array (
     'pageTitle' => 0,
     'teplateWebPath' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_4f68d95849501',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4f68d95849501')) {function content_4f68d95849501($_smarty_tpl) {?><html>
     <head>
@@ -43,5 +43,5 @@ css/main.css" type="text/css" />
 	
 <div id="centerColumn">
 
-	centerColumn
+
 <?php }} ?>

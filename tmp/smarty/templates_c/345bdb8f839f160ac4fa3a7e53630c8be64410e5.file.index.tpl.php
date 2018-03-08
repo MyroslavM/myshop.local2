@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2018-03-08 19:51:08
+<?php /* Smarty version Smarty-3.1.6, created on 2018-03-08 21:19:21
          compiled from "../views/default\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:39854f65b704435a20-76434617%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '345bdb8f839f160ac4fa3a7e53630c8be64410e5' => 
     array (
       0 => '../views/default\\index.tpl',
-      1 => 1520455275,
+      1 => 1520533158,
       2 => 'file',
     ),
   ),
@@ -36,8 +36,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
     <div style=" float: left; padding: 0px 30px 40px 0px">
         <a href="/product/<?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 ">
-            <img src="/images/products/<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
-" width = "100" alt="Tovar =)">
+            <img src="/images/products/<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
+" width = "100 px" alt="Tovar =)">
         </a><br>
         <a href="/product/<?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 /"><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>

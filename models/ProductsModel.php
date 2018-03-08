@@ -17,3 +17,15 @@ function getLastProducts($limit = null)
 
     return createSmartyRsArray($rs);
 }
+
+function getProductsByCat($itemId)
+{
+    $itemId = intval($itemId);
+    $sql = "SELECT *
+            FROM products
+            WHERE category_id = {$itemId}";
+
+    $rs = mysql_query($sql);//викликаємо запит
+
+    return createSmartyRsArray($rs);//перетворюємо в масив сматрі
+}

@@ -1,8 +1,8 @@
 {*головна сторінка*}
 
-{foreach $rsProducts as $item name=products}
+{foreach $rsProducts as $item name = products}
     <div style=" float: left; padding: 0px 30px 40px 0px">
-        <a href="product/{$item['ID']}">
+        <a href="/product/{$item['ID']}">
             <img src="/images/products/{$item['name']}" width = "100" alt="Tovar =)">
         </a><br>
         <a href="/product/{$item['ID']}/">{$item['name']}</a>

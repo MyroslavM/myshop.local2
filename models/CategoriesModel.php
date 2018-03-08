@@ -36,3 +36,16 @@ function getAllMainCatsWithChildren(){
 
     return $smartyRs;
 }
+//получити данні категорії по ID
+function getCatById($catId)
+{
+    $catId = intval($catId);
+    $sql = "SELECT *
+            FROM categories
+            WHERE
+            id = '{$catId}'";
+
+    $rs = mysql_query($sql);
+
+    return mysql_fetch_assoc($rs);
+}

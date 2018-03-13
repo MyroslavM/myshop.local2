@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2018-03-07 23:43:06
+<?php /* Smarty version Smarty-3.1.6, created on 2018-03-11 00:04:47
          compiled from "../views/default\category.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:319085aa04aae129da3-85014054%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '76efe512959f670dcfbe2dc8447081a8ad91a48b' => 
     array (
       0 => '../views/default\\category.tpl',
-      1 => 1520455384,
+      1 => 1520715852,
       2 => 'file',
     ),
   ),
@@ -41,8 +41,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
          <div style=" float: left; padding: 0px 30px 40px 0px">
              <a href="/product/<?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 /">
-                 <img src="/images/products/<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
-" width = "100" alt="Tovar =)">
+                 <img src="/images/products/<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
+" height="100px" alt="Tovar =)">
              </a><br>
              <a href="/product/<?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 /"><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
@@ -62,4 +62,9 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <h2><a href="/category/<?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 /"><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
 </a></h2>
-    <?php } ?><?php }} ?>
+    <?php } ?>
+
+
+ //дз написати що товару нема
+ //що таке .htaccess на сайті хабрахабр
+<?php }} ?>

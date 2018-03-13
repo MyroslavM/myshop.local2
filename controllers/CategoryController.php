@@ -26,7 +26,7 @@ function indexAction($smarty){
     $rsProducts = null;
     $rsChildCats = null;
     $rsCategory = getCatById($catId);//визначає яка категорія(головна чи дочірня)
-
+    //d($rsCategory);
     //якщо категорія головна то отримуємо дочірні
     //інаккше показати весь товар
     if($rsCategory ['parent_id'] == 0){
@@ -36,13 +36,14 @@ function indexAction($smarty){
     }
 
 
-    $rsCategory = getAllMainCatsWithChildren();
+    $rsCategories = getAllMainCatsWithChildren();
 
     $smarty->assign('pageTitle', 'Товари категорії '  . $rsCategory['name']);
 
     $smarty->assign('rsCategory', $rsCategory);
     $smarty->assign('rsProducts', $rsProducts);
-    $smarty->assign('rsChildCast', $rsChildCats);
+    $smarty->assign('rsChildCats', $rsChildCats);
+
 
     $smarty->assign('rsCategories', $rsCategories);
 

@@ -29,3 +29,19 @@ function getProductsByCat($itemId)
 
     return createSmartyRsArray($rs);//перетворюємо в масив сматрі
 }
+
+/*
+ *
+ * получити даноі продукта по ID
+ *
+ */
+ function getProductById($itemId)
+ {
+     $itemId = intval($itemId);//провірка на цілочисельність
+     $sql = "SELECT *
+            FROM products
+            WHERE id = {$itemId}";
+
+     $rs = mysql_query($sql);//викликаємо запит
+     return mysql_fetch_assoc($rs);// получаємо асіцавтивний масив
+ }

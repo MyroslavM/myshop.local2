@@ -18,7 +18,7 @@ function indexAction($smarty){
     if($itemId == null) exit();
 
     //отримання даних
-    $rsProduct = getProductById($itemId);
+    $rsProduct = getProductById($itemId);//записує всі дані які будуть виводитися
 
     //получити всі категорії
     $rsCategories = getAllMainCatsWithChildren();//набір даних категорій для головного меню сайта

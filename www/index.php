@@ -1,5 +1,11 @@
 <?php
 
+session_start();//запувкаємо сесію
+//якщо в сесії нема масива для корзини то ми його створюємо
+if( ! isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
+
 include_once '../config/config.php';        // Инициализация настроек
 include_once '../config/db.php';             //ініціалізація БД
 include_once '../library/mainFunctions.php'; // Основные функции
